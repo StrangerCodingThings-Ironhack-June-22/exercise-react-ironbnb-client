@@ -13,7 +13,7 @@ function ApartmentsList() {
                 setApartments(response.data);
             })
             .catch( e => console.log("error getting apartments from API", e));
-    });
+    }, []);
 
     return (
         <section className="ApartmentsList">
